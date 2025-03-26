@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/t/1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Student App</title>
+  <link rel="stylesheet" href="./College Student App_files/styles.css">
+  <link rel="stylesheet" href="./College Student App_files/style.css"> <!-- Add this line to link style.css -->
+</head>
+<body>
+  <header>
+    <h1>College Student App</h1>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/t/1.html#food">Food</a></li>
+        <li><a href="http://127.0.0.1:5500/t/1.html#stationary">Stationary</a></li>
+        <li><a href="http://127.0.0.1:5500/t/1.html#laundry">Laundry</a></li>
+        <li><a href="http://127.0.0.1:5500/t/1.html#navigation">Navigation</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="food">
+      <h2>Food</h2>
+      <div class="item">
+        <img src="./College Student App_files/th" alt="Food Image">
+        <p>Food item description goes here</p>
+      </div>
+      <!-- Add more food items here -->
+    </section>
+    <section id="stationary">
+      <h2>Stationary</h2>
+      <div class="item">
+        <img src="./College Student App_files/OIP.N1w0NoQoMbmfh9m3AiCmHgHaEK" alt="Stationary Image">
+        <p>Stationary item description goes here</p>
+      </div>
+      <!-- Add more stationary items here -->
+    </section>
+    <section id="laundry">
+      <h2>Laundry</h2>
+      <div class="item">
+        <img src="./College Student App_files/shutterstock_435669883.jpg" alt="Laundry Image">
+        <p>Laundry item description goes here</p>
+      </div>
+      <!-- Add more laundry items here -->
+    </section>
+    <section id="navigation">
+      <h2>Navigation</h2>
+      <div class="item">
+        <img src="./College Student App_files/OIP.HUqvp0jc9zCf-9tZvM4JTAHaE8" alt="Navigation Image">
+        <p>Navigation item description goes here</p>
+      </div>
+      <!-- Add more navigation items here -->
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 College Student App</p>
+  </footer>
+  <script src="./College Student App_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>

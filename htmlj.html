@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            float: left;
+            margin-right: 20px;
+        }
+        .menu {
+            float: left;
+        }
+        .section {
+            padding: 20px;
+        }
+        .restaurant, .laundry, .stationary, .travel {
+            margin-bottom: 20px;
+        }
+        .restaurant img, .laundry img, .stationary img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+            float: left;
+        }
+        .travel .form-group {
+            margin-bottom: 10px;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+        .confirm-ride {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="data:image/jpeg;base64,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" alt=" Logo">
+        </div>
+        <div class="menu">
+            <a href="http://127.0.0.1:5500/t/1.html#food">FOOD</a> |
+            <a href="http://127.0.0.1:5500/t/1.html#laundry">LAUNDRY</a> |
+            <a href="http://127.0.0.1:5500/t/1.html#stationary">STATIONARY</a> |
+            <a href="http://127.0.0.1:5500/t/1.html#navigation">TRAVELLING</a> |
+            <a href="https://maps.google.com">MAPS</a>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div class="section">
+        <div class="restaurant">
+            <h2>Restaurant Name</h2>
+            <a href="#"> <!-- Link to menu --> 
+                <img src="restaurant_image.jpg" alt="Restaurant Image">
+            </a>
+        </div>
+
+        <div class="laundry">
+            <h2>Laundry</h2>
+            <form action="#">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="time">Time for Pickup:</label><br>
+                <input type="time" id="time" name="time"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="stationary">
+            <h2>Stationary</h2>
+            <a href="#"> <!-- Link to stationary items -->
+                <img src="stationary_image.jpg" alt="Stationary Image">
+            </a>
+        </div>
+
+        <div class="travel">
+            <h2>Travelling</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="pickup">Pickup Location:</label><br>
+                    <input type="text" id="pickup" name="pickup"><br>
+                </div>
+                <div class="form-group">
+                    <label for="drop">Drop Location:</label><br>
+                    <input type="text" id="drop" name="drop"><br>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time for Pickup:</label><br>
+                    <input type="time" id="time" name="time"><br>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date of Travel:</label><br>
+                    <input type="date" id="date" name="date"><br>
+                </div>
+                <div class="form-group">
+                    <label for="mode">Select Mode:</label><br>
+                    <select id="mode" name="mode">
+                        <option value="car">Car</option>
+                        <option value="bike">Bike</option>
+                        <option value="scooter">Scooter</option>
+                    </select>
+                </div>
+                <input type="submit" value="Calculate Fare">
+            </form>
+            <div id="fare"></div>
+            <div class="confirm-ride">
+                <button onclick="bookRide()">Book Ride</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script>
+        // JavaScript for Google Maps integration goes here
+    </script>
+</body>
+</html>
